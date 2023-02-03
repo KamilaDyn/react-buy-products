@@ -1,4 +1,4 @@
-import { Button, Card, styled } from '@mui/material';
+import { Button, styled } from '@mui/material';
 
 type buttonBack = {
   transparent?: boolean;

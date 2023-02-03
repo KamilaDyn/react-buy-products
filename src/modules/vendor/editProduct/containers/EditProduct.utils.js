@@ -8,7 +8,6 @@ export const useEditProduct = (productId) => {
   const { editOneProduct, getSingleProduct } = actions.products;
   const dispatch = useDispatch();
   const singleProduct = useSelector(selectors.products.getSingleProduct);
-  console.log(singleProduct);
   useEffect(() => {
     setTimeout(() => {
       dispatch(getSingleProduct(productId));
@@ -21,7 +20,7 @@ export const useEditProduct = (productId) => {
     }, 1000);
   }, []);
 
-  const handleCloseSnackbar = (event, reason) => {
+  const handleCloseSnackbar = (_, reason) => {
     if (reason === 'clickaway') {
       return;
     }

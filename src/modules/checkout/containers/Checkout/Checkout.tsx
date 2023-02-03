@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Grid } from '@mui/material';
-import { CheckoutSteps, Sidebar, CheckoutFormik } from '../../components';
+import { CheckoutSteps, CheckoutFormik } from '../../components';
 import { useCheckoutForm } from './Checkout.utils';
 
 const Checkout: FC = () => {

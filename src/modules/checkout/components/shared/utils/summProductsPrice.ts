@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux';
 import { selectors } from 'store';
-interface Products {
-  shoppingProducts: object[];
-  sumProductsPrice: number;
-  deliveryType: string;
-  deliveryPrice: number;
-}
+// interface Products {
+//   shoppingProducts: object[];
+//   sumProductsPrice: number;
+//   deliveryType: string;
+//   deliveryPrice: number;
+// }
 
 export const useSumProductsPrice = () => {
   const products = useSelector(selectors.shoppingList.getShoppingList);

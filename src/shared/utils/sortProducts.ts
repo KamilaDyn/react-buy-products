@@ -7,10 +7,7 @@ export const useOrderProducts = (type) => {
   const [sortType, setSortType] = useState('relevant');
   const products = useSelector(selectors.searchProducts.getSearchedProducts);
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(actions.searchProducts.searchProducts(type));
-    sortArray(sortType);
-  }, []);
+
   const sortArray = (order) => {
     switch (order) {
       case 'relevant':
@@ -25,6 +22,11 @@ export const useOrderProducts = (type) => {
         return dispatch(actions.searchProducts.searchProducts(type));
     }
   };
+  useEffect(() => {
+    dispatch(actions.searchProducts.searchProducts(type));
+    sortArray(sortType);
+  }, []);
+
   const handleChange = async (event: SelectChangeEvent) => {
     setSortType(event.target.value);
   };

@@ -1,11 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { Box, Dialog, DialogTitle, DialogActions, Button } from "@mui/material";
-import { selectors } from "store";
-import { InfoSnackbar, Loader } from "../../../shared";
-import { Header } from "../Header";
-import ProductItem from "../ProductItem/ProductItem";
-import { useDeleteProduct } from "./ProductsList.utils";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Box, Dialog, DialogTitle, DialogActions, Button } from '@mui/material';
+import { selectors } from 'store';
+import { InfoSnackbar, Loader } from '../../../shared';
+import { Header } from '../Header';
+import ProductItem from '../ProductItem/ProductItem';
+import { useDeleteProduct } from './ProductsList.utils';
 
 const ProductsList = () => {
   const {
@@ -18,7 +18,6 @@ const ProductsList = () => {
     setOpenPermission,
     productId,
     setProductId,
-    loading,
   } = useDeleteProduct();
   const successMessage = useSelector(selectors.products.getSuccessMessage);
   const errorMessage = useSelector(selectors.products.getErrorMessage);
@@ -38,10 +37,10 @@ const ProductsList = () => {
       <Dialog
         open={openPermission}
         onClose={handleClosePermission}
-        aria-labelledby='alert-dialog-title'
-        aria-describedby='alert-dialog-description'
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id='alert-dialog-title'>Usunąć produkt?</DialogTitle>
+        <DialogTitle id="alert-dialog-title">Usunąć produkt?</DialogTitle>
         <DialogActions>
           <Button onClick={handleClosePermission}>Nie</Button>
           <Button

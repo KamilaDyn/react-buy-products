@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { actions } from "store";
+import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { actions } from 'store';
 
 export const useDeleteProduct = () => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [openPermission, setOpenPermission] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [productId, setProductId] = useState("");
+  const [productId, setProductId] = useState('');
   const { getAllProducts, deleteOneProduct } = actions.products;
   const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ export const useDeleteProduct = () => {
     setTimeout(() => {
       setLoading(true);
     }, 600);
-  });
+  }, []);
 
   const handleDelete = (id) => {
     setOpenPermission(true);
@@ -32,7 +32,7 @@ export const useDeleteProduct = () => {
   };
 
   const handleCloseSnackbar = (event, reason) => {
-    if (reason === "clickaway") {
+    if (reason === 'clickaway') {
       return;
     }
     setOpenSnackbar(false);
