@@ -1,10 +1,10 @@
-import axios from "axios";
+import axios from 'axios';
 
-const API_URL = "http://localhost:8000/users";
+const API_URL = 'https://pelican-pajamas.cyclic.app/users';
 
 const saveTokenInLocalStorage = (tokenDetails) => {
   tokenDetails.expireDate = new Date(new Date().getTime() * 2);
-  localStorage.setItem("currentUser", JSON.stringify(tokenDetails));
+  localStorage.setItem('currentUser', JSON.stringify(tokenDetails));
 };
 
 const addUser = (user) => {
@@ -16,12 +16,12 @@ const loginRequest = () => {
 
 const formatError = (errorRespond) => {
   switch (errorRespond) {
-    case "Email already exists":
-      return "Podany email jest już w użyciu.";
-    case "Nie ma takiego maila":
-      return "Błędny mail lub hasło";
+    case 'Email already exists':
+      return 'Podany email jest już w użyciu.';
+    case 'Nie ma takiego maila':
+      return 'Błędny mail lub hasło';
     default:
-      return "";
+      return '';
   }
 };
 

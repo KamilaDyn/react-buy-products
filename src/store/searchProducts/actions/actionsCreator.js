@@ -4,7 +4,7 @@ import { Types } from './actionsType';
 const searchProducts = (type) => {
   return async (dispatch) => {
     await axios
-      .get(`http://localhost:8000/products?type=${type}`)
+      .get(`https://pelican-pajamas.cyclic.app/products?type=${type}`)
       .then((response) => {
         dispatch(getProductsSuccess(response.data));
       })
@@ -20,7 +20,7 @@ const getProductsSuccess = (data) => {
 const searchProductsByCategory = (category) => {
   return async (dispatch) => {
     await axios
-      .get(`http://localhost:8000/products?category=${category}`)
+      .get(`https://pelican-pajamas.cyclic.app/products?category=${category}`)
       .then((response) => {
         dispatch(getProductCategorySuccess(response.data));
       })

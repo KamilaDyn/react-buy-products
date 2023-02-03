@@ -1,5 +1,5 @@
-import axios from "axios";
-const API_URL = "http://localhost:8000/products";
+import axios from 'axios';
+const API_URL = 'https://pelican-pajamas.cyclic.app/products';
 
 export const getProducts = () => {
   return axios.get(API_URL);
@@ -22,9 +22,9 @@ export const getProduct = (productId) => {
 };
 export const formatError = (errorRespond) => {
   switch (errorRespond) {
-    case "Not Found":
-      return "Problem z połączeniem z bazą danych";
+    case 'Not Found':
+      return 'Problem z połączeniem z bazą danych';
     default:
-      return "";
+      return '';
   }
 };
