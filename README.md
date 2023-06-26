@@ -1,6 +1,9 @@
+<h3>The project it was created to study react, new features. And it is just for practice. </h3>
+
 <h2>Run project instruction</h2>
 
 <p> install dependencies 'npm install'  and install separately concurrently , 'npm i concurrently'</p>
+
 # To run app and server
 
 npm run start
@@ -33,5 +36,3 @@ npx json-server data/db.json -m ./node_modules/json-server-auth --port 8000
 <li>Login form </br> <img style="margin-top:15px;" src='./assets/login.gif'/></li>
 </ol>
 </div>
-
-<p>The project it was created to study react, new features. And it is just for practice. </p>
