@@ -19,16 +19,16 @@ npx json-server data/db.json -m ./node_modules/json-server-auth --port 8000
 <p>It shows a products list, which is from json server </p>
 <p>The page has: </p>
 <ol>
-<li style="padding-bottom:10px;">Category list filter </br>
-<img style="padding-top:5px;" src='./assets/category.gif' target='_blank' alt='category'/>
+<li style="margin-bottom:20px;">Category list filter </br>
+<img style="margin-top:15px;" src='./assets/category.gif' target='_blank' alt='category'/>
 </li>
-<li style="padding-bottom:10px;">Price filter </br>
-<img style="padding-top:5px;" src='./assets/price-filter.gif' target='_blank' alt='price filter'/>
+<li style="margin-bottom:20px;">Price filter </br>
+<img style="margin-top:15px;" src='./assets/price-filter.gif' target='_blank' alt='price filter'/>
 </li>
-<li style="padding-bottom:10px;">Add products to basket list and payment form </br> <img style="padding-top:5px;" src='./assets/addProducts.gif' target='_blank' alt='add products' /> </li>
-<li style="padding-bottom:10px;">Register form
-<img style="padding-top:5px;" src='./assets/register.gif'  alt='regiter'/>
+<li style="margin-bottom:20px;">Add products to basket list and payment form </br> <img style="margin-top:15px;"src='./assets/addProducts.gif' target='_blank' alt='add products' /> </li>
+<li style="margin-bottom:20px;">Register form
+<img style="margin-top:15px;" src='./assets/register.gif'  alt='regiter'/>
 </li>
-<li>Login form </br> <img style="padding-top:5px;" src='./assets/login.gif' target='_blank'/></li>
+<li>Login form </br> <img style="margin-top:15px;" src='./assets/login.gif' target='_blank'/></li>
 </ol>
 </div>
