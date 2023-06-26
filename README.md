@@ -6,11 +6,11 @@ npm run start
 
 npx json-server data/db.json -m ./node_modules/json-server-auth --port 8000
 
-## <a href='https://react-buy-products.netlify.app/'>Live</a>
-
-This project is deployed in netlify
+# This project is deployed in netlify
 
 # <a href='https://react-buy-products.netlify.app/' target="_blank">Live</a>
+
+---
 
 <div>
 <h2>Run project instruction</h2>
